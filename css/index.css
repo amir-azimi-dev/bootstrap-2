@@ -65,9 +65,16 @@ body {
 }
 
 /* counters */
-.counters__icon {
+.counters__icon,
+.features__icon {
   font-size: 50px;
   display: inline-flex;
+}
+
+
+/* features */
+.features__icon {
+  color: #4154f1;
 }
 
 /* media queries */
