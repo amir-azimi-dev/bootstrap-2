@@ -1,0 +1,22 @@
+@font-face {
+  font-family: YekanBakh;
+  src: url("../assets/fonts/YekanBakh-Regular.ttf") format("truetype"),
+    url("../assets/fonts/YekanBakh-Regular.woff") format("woff"),
+    url("../assets/fonts/YekanBakh-Regular.woff2") format("woff2");
+}
+
+body {
+  font-family: YekanBakh;
+}
+
+
+/* header */
+
+.header {
+  transition: all 0.15s;
+}
+
+.header--scrolled {
+  background-color: #fff;
+  box-shadow: 0 2px 20px rgba(1, 41, 112, 0.1);
+}
