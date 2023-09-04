@@ -8,10 +8,14 @@
 
 /* variables */
 :root {
-  --transition: all 0.2s;
+  --transition: all 0.2s ease-out;
 }
 
 /* reset css */
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -33,9 +37,10 @@ html {
 
 body {
   font-family: YekanBakh;
+  overflow-x: hidden;
 }
 
-/* components */
+/* utilities */
 .hover-grow-scale {
   transition: var(--transition);
 }
@@ -43,6 +48,49 @@ body {
 .hover-grow-scale:hover {
   transform: scale(1.1);
 }
+
+.icon {
+  font-size: 50px;
+  line-height: 0;
+  display: inline-block;
+}
+
+.bg-blue-50 {
+  background-color: #dbf3fe;
+}
+
+.bg-orange-50 {
+  background-color: #fde3c4;
+}
+
+.bg-green-50 {
+  background-color: #cffddf;
+}
+
+.text-blue {
+  color: #2db6fa;
+}
+
+.text-orange {
+  color: #f68c09;
+}
+
+.text-green {
+  color: #08da4e;
+}
+
+.border-blue {
+  border-color: #2db6fa !important;
+}
+
+.border-orange {
+  border-color: #f68c09 !important;
+}
+
+.border-green {
+  border-color: #08da4e !important;
+}
+
 
 /* header */
 
@@ -64,18 +112,39 @@ body {
   padding-top: 80px;
 }
 
-/* counters */
-.counters__icon,
-.features__icon {
-  font-size: 50px;
-  display: inline-flex;
-}
-
-
 /* features */
-.features__icon {
+.features .icon {
   color: #4154f1;
 }
+
+/* services */
+.service {
+  box-shadow: 0 0 30px rgba(1, 41, 112, 0.1);
+  transition: var(--transition);
+}
+
+.service * {
+  transition: var(--transition);
+}
+
+.service:hover *:not(.icon) {
+  color: #fff;
+}
+
+.service:hover .services__icon {
+  background-color: #fff;
+}
+
+.service--blue:hover {
+  background-color: #2db6fa;
+}
+.service--orange:hover {
+  background-color: #f68c09;
+}
+.service--green:hover {
+  background-color: #08da4e;
+}
+
 
 /* media queries */
 @media all and (max-width: 746px) {

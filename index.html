@@ -20,7 +20,7 @@
 
 <body>
 
-  <header x-data="{navShow: false}" @scroll.window="navShow = (window.scrollY > 100)" class="header fixed-top"
+  <header class="header fixed-top" x-data="{navShow: false}" @scroll.window="navShow = (window.scrollY > 100)"
     :class="{'header--scrolled': navShow}">
     <nav class="navbar navbar-expand-md py-3" @load.window="$dispatch('scroll')">
       <div class="container align-items-center">
@@ -152,7 +152,7 @@
             <div class="card shadow">
               <div class="card-body">
                 <div class="counters-item d-flex justify-content-center align-items-center">
-                  <i class="counters__icon bi bi-emoji-smile text-primary me-3"></i>
+                  <i class="icon bi bi-emoji-smile text-primary me-3"></i>
                   <div class="counters__content d-flex flex-column justify-contetn-center">
                     <h4 class="fs-2 text-primary fw-bold my-0 purecounter" data-purecounter-start="0"
                       data-purecounter-end="9001">0</h4>
@@ -166,7 +166,7 @@
             <div class="card shadow">
               <div class="card-body">
                 <div class="counters-item d-flex justify-content-center align-items-center">
-                  <i class="counters__icon bi bi-journal-richtext text-warning me-3"></i>
+                  <i class="icon bi bi-journal-richtext text-warning me-3"></i>
                   <div class="counters__content d-flex flex-column justify-contetn-center">
                     <h4 class="fs-2 text-primary fw-bold my-0 purecounter" data-purecounter-start="0"
                       data-purecounter-end="2000">0</h4>
@@ -180,7 +180,7 @@
             <div class="card shadow">
               <div class="card-body">
                 <div class="counters-item d-flex justify-content-center align-items-center">
-                  <i class="counters__icon bi bi-headset text-success me-3"></i>
+                  <i class="icon bi bi-headset text-success me-3"></i>
                   <div class="counters__content d-flex flex-column justify-contetn-center">
                     <h4 class="fs-2 text-primary fw-bold my-0 purecounter" data-purecounter-start="0"
                       data-purecounter-end="3002">0</h4>
@@ -194,7 +194,7 @@
             <div class="card shadow">
               <div class="card-body">
                 <div class="counters-item d-flex justify-content-center align-items-center">
-                  <i class="counters__icon bi bi-people text-danger me-3"></i>
+                  <i class="icon bi bi-people text-danger me-3"></i>
                   <div class="counters__content d-flex flex-column justify-contetn-center">
                     <h4 class="fs-2 text-primary fw-bold my-0 purecounter" data-purecounter-start="0"
                       data-purecounter-end="5604">0</h4>
@@ -225,66 +225,72 @@
               <div class="col-md-6">
                 <div class="features__item d-flex justify-content-center gap-4">
                   <div>
-                    <i class="bi bi-folder-fill features__icon"></i>
+                    <i class="bi bi-folder-fill icon"></i>
                   </div>
                   <div class="features__content">
                     <h5>لورم ایپسوم متن ساختگی</h5>
-                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                      طراحان گرافیک است.</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="features__item d-flex justify-content-center gap-4">
                   <div>
-                    <i class="bi bi-stack features__icon"></i>
+                    <i class="bi bi-stack icon"></i>
                   </div>
                   <div class="features__content">
                     <h5>لورم ایپسوم متن ساختگی</h5>
-                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                      طراحان گرافیک است.</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="features__item d-flex justify-content-center gap-4">
                   <div>
-                    <i class="bi bi-envelope-fill features__icon"></i>
+                    <i class="bi bi-envelope-fill icon"></i>
                   </div>
                   <div class="features__content">
                     <h5>لورم ایپسوم متن ساختگی</h5>
-                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                      طراحان گرافیک است.</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="features__item d-flex justify-content-center gap-4">
                   <div>
-                    <i class="bi bi-credit-card-2-front-fill features__icon"></i>
+                    <i class="bi bi-credit-card-2-front-fill icon"></i>
                   </div>
                   <div class="features__content">
                     <h5>لورم ایپسوم متن ساختگی</h5>
-                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                      طراحان گرافیک است.</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="features__item d-flex justify-content-center gap-4">
                   <div>
-                    <i class="bi bi-cloud-check-fill features__icon"></i>
+                    <i class="bi bi-cloud-check-fill icon"></i>
                   </div>
                   <div class="features__content">
                     <h5>لورم ایپسوم متن ساختگی</h5>
-                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                      طراحان گرافیک است.</p>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="features__item d-flex justify-content-center gap-4">
                   <div>
-                    <i class="bi bi-file-earmark-code-fill features__icon"></i>
+                    <i class="bi bi-file-earmark-code-fill icon"></i>
                   </div>
                   <div class="features__content">
                     <h5>لورم ایپسوم متن ساختگی</h5>
-                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                      طراحان گرافیک است.</p>
                   </div>
                 </div>
               </div>
@@ -294,6 +300,52 @@
       </div>
     </section>
     <!-- features end -->
+
+    <!-- services start -->
+    <section class="serveces">
+      <div class="container">
+        <div class="row mb-3">
+          <h2 class="fw-bold">لورم ایپسوم</h2>
+          <p class="">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+        </div>
+
+        <div class="row text-center g-5">
+          <div class="col-md-6 col-lg-4">
+            <div class="service service--blue border-bottom border-3 border-blue rounded">
+              <div class="px-3 py-5 px-sm-5">
+                <i class="services__icon icon text-blue bg-blue-50 bi bi-chat-left-text-fill p-4 rounded my-3"></i>
+                <h4 class="fw-bold my-2">لورم ایپسوم</h4>
+                <p class="mb-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                <a href="#" class="text-blue fw-bold d-flex align-items-center justify-content-center my-2"><span class="me-2">مشاهده‌ی بیشتر</span> <i class="bi bi-arrow-left d-inline-block fs-4"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service service--orange border-bottom border-3 border-orange rounded">
+              <div class="px-3 py-5 px-sm-5">
+                <i class="services__icon icon text-orange bg-orange-50 bi bi-chat-left-text-fill p-4 rounded my-3"></i>
+                <h4 class="fw-bold my-2">لورم ایپسوم</h4>
+                <p class="mb-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                <a href="#" class="text-orange fw-bold d-flex align-items-center justify-content-center my-2"><span class="me-2">مشاهده‌ی بیشتر</span> <i class="bi bi-arrow-left d-inline-block fs-4"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service service--green border-bottom border-3 border-green rounded">
+              <div class="px-3 py-5 px-sm-5">
+                <i class="services__icon icon text-green bg-green-50 bi bi-chat-left-text-fill p-4 rounded my-3"></i>
+                <h4 class="fw-bold my-2">لورم ایپسوم</h4>
+                <p class="mb-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                <a href="#" class="text-green fw-bold d-flex align-items-center justify-content-center my-2"><span class="me-2">مشاهده‌ی بیشتر</span> <i class="bi bi-arrow-left d-inline-block fs-4"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services end -->
+
+    <h1 style="height: 100vh;"></h1>
 
   </main>
 
@@ -305,6 +357,7 @@
 
 
   <script>
+    window.onload = () => window.scrollTo(0, window.scrollY);
     new PureCounter();
   </script>
 </body>
