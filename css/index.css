@@ -64,6 +64,12 @@ body {
   padding-top: 80px;
 }
 
+/* counters */
+.counters__icon {
+  font-size: 50px;
+  display: inline-flex;
+}
+
 /* media queries */
 @media all and (max-width: 746px) {
   .navbar-collapse {
