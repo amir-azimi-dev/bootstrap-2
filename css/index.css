@@ -1,3 +1,4 @@
+/* fonts */
 @font-face {
   font-family: YekanBakh;
   src: url("../assets/fonts/YekanBakh-Regular.ttf") format("truetype"),
@@ -5,18 +6,69 @@
     url("../assets/fonts/YekanBakh-Regular.woff2") format("woff2");
 }
 
+/* variables */
+:root {
+  --transition: all 0.2s;
+}
+
+/* reset css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.5;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   font-family: YekanBakh;
 }
 
+/* components */
+.hover-grow-scale {
+  transition: var(--transition);
+}
+
+.hover-grow-scale:hover {
+  transform: scale(1.1);
+}
 
 /* header */
 
 .header {
-  transition: all 0.15s;
+  transition: var(--transition);
 }
 
 .header--scrolled {
   background-color: #fff;
   box-shadow: 0 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+/* hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/images/hero/intro-bg.png") no-repeat center
+    top/cover;
+  padding-top: 80px;
+}
+
+/* media queries */
+@media all and (max-width: 746px) {
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 10px 20px;
+  }
 }
