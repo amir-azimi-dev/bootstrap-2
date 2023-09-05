@@ -175,6 +175,19 @@ body {
   max-height: 160px;
 }
 
+/* footer */
+.footer__divider {
+  background: rgb(13 110 253 / 25%);
+  width: 100%;
+  max-width: 200px;
+  height: 5px;
+  margin-bottom: 1rem;
+}
+
+.footer__icon {
+  font-size: 13px;
+}
+
 /* media queries */
 @media all and (max-width: 746px) {
   .hover-grow-scale:hover {
