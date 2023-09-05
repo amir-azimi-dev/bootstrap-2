@@ -41,6 +41,10 @@ body {
 }
 
 /* utilities */
+.ltr {
+  direction: ltr;
+}
+
 .hover-grow-scale {
   transition: var(--transition);
 }
@@ -156,6 +160,19 @@ body {
 
 .plans li {
   margin-bottom: 10px;
+}
+
+/* contact-us */
+.contact-us__item {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-us__form textarea {
+  min-height: 80px;
+  max-height: 160px;
 }
 
 /* media queries */
