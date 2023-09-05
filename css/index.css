@@ -79,6 +79,10 @@ body {
   color: #08da4e;
 }
 
+.text-pink {
+  color: #ff0071;
+}
+
 .border-blue {
   border-color: #2db6fa !important;
 }
@@ -145,9 +149,21 @@ body {
   background-color: #08da4e;
 }
 
+/* plans */
+.plans img {
+  max-width: 350px;
+}
+
+.plans li {
+  margin-bottom: 10px;
+}
 
 /* media queries */
 @media all and (max-width: 746px) {
+  .hover-grow-scale:hover {
+    transform: none;
+  }
+
   .navbar-collapse {
     background-color: #fff;
     padding: 10px 20px;
