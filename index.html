@@ -6,15 +6,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap & Bootstrap Icons -->
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="css/index.css">
 
   <!-- Alpine.js -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-  <link rel="stylesheet" href="css/index.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>bootstrap-2</title>
 </head>
 
@@ -68,11 +76,11 @@
       <div class="container">
         <div class="row align-items-center gy-5">
           <div class="col-lg-6 text-center text-lg-start py-3">
-            <h2 class="text-primary fw-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</h2>
-            <h4 class="text-muted my-3">لورم ایپسوم متن ساختگی با تولید سادگی.</h4>
-            <a href="#" class="btn btn-lg btn-primary hover-grow-scale">لورم ایپسوم</a>
+            <h2 class="text-primary fw-bold" data-aos="fade-up">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</h2>
+            <h4 class="text-muted my-3" data-aos="fade-up" data-aos-delay="200">لورم ایپسوم متن ساختگی با تولید سادگی.</h4>
+            <a href="#" class="hero__link btn btn-primary hover-grow-scale"  data-aos="fade-up" data-aos-delay="400">لورم ایپسوم</a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
             <img src="assets/images/hero/intro-img.png" alt="hero-section-image" class="img-fluid d-block mx-auto">
           </div>
         </div>
@@ -84,10 +92,10 @@
     <section class="about-us my-5">
       <div class="container">
         <div class="row gx-lg-0 flex-row-reverse align-items-lg-stretch">
-          <div class="col-lg-6 d-flex align-items-center">
+          <div class="col-lg-6 d-flex align-items-center"  data-aos="zoom-in" data-aos-delay="200">
             <img class="w-100" src="assets/images/about/about.jpg" alt="about-image">
           </div>
-          <div class="col-lg-6 bg-light d-flex align-items-center">
+          <div class="col-lg-6 bg-light d-flex align-items-center" data-aos="fade-left">
             <div class="about-us-content p-4 p-lg-5 ">
               <h2 class="text-primary">لورم ایپسوم متن ساختگی</h2>
               <h4 class="fw-bold py-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</h4>
@@ -105,13 +113,13 @@
     <!-- values start -->
     <section class="values">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-3"  data-aos="fade-up">
           <h2 class="text-primary fw-bold">لورم ایپسوم</h2>
           <p class="fw-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
         </div>
 
-        <div class="row g-4 justify-content-center justify-content-md-start">
-          <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+        <div class="row g-4 justify-content-center justify-content-md-start"  data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="300">
             <div class="card shadow overflow-hidden">
               <img src="assets/images/values/1.png" alt="value-image" class="w-100">
               <div class="card-body p-5 px-3 text-center">
@@ -120,7 +128,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4"  data-aos="fade-up">
             <div class="card shadow overflow-hidden">
               <img src="assets/images/values/2.png" alt="value-image" class="w-100">
               <div class="card-body p-5 px-3 text-center">
@@ -129,7 +137,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4" data-aos="fade-right" data-aos-delay="300">
             <div class="card shadow overflow-hidden">
               <img src="assets/images/values/3.png" alt="value-image" class="w-100">
               <div class="card-body p-5 px-3 text-center">
@@ -148,7 +156,7 @@
     <section class="counters my-5">
       <div class="container">
         <div class="row g-3">
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3" data-aos="fade-left" data-aos-delay="200">
             <div class="card shadow">
               <div class="card-body">
                 <div class="counters-item d-flex justify-content-center align-items-center">
@@ -162,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3" data-aos="fade-left">
             <div class="card shadow">
               <div class="card-body">
                 <div class="counters-item d-flex justify-content-center align-items-center">
@@ -176,7 +184,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3" data-aos="fade-right">
             <div class="card shadow">
               <div class="card-body">
                 <div class="counters-item d-flex justify-content-center align-items-center">
@@ -190,7 +198,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-3">
+          <div class="col-sm-6 col-lg-3" data-aos="fade-right" data-aos-delay="200">
             <div class="card shadow">
               <div class="card-body">
                 <div class="counters-item d-flex justify-content-center align-items-center">
@@ -212,15 +220,15 @@
     <!-- features start -->
     <section class="features py-5">
       <div class="container">
-        <div class="row mb-4">
+        <div class="row mb-4" data-aos="fade-up">
           <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</h3>
         </div>
 
         <div class="row align-items-center g-5">
-          <div class="col-sm-8 col-lg-6 col-xl-5 mx-auto">
+          <div class="col-sm-8 col-lg-6 col-xl-5 mx-auto" data-aos="fade-left" data-aos-delay="200">
             <img class="w-100" src="assets/images/features/1.png" alt="features-section-image">
           </div>
-          <div class="col-xl-7">
+          <div class="col-xl-7" data-aos="fade-right" data-aos-delay="200">
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="features__item d-flex justify-content-center gap-4">
@@ -304,13 +312,13 @@
     <!-- services start -->
     <section class="serveces">
       <div class="container">
-        <div class="row mb-3">
+        <div class="row mb-3" data-aos="fade-up">
           <h2 class="fw-bold">لورم ایپسوم</h2>
           <p class="">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
         </div>
 
         <div class="row text-center g-5">
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="service service--blue border-bottom border-3 border-blue rounded">
               <div class="px-3 py-5 px-sm-5">
                 <i class="services__icon icon text-blue bg-blue-50 bi bi-chat-left-text-fill p-4 rounded my-3"></i>
@@ -322,7 +330,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="service service--orange border-bottom border-3 border-orange rounded">
               <div class="px-3 py-5 px-sm-5">
                 <i class="services__icon icon text-orange bg-orange-50 bi bi-chat-left-text-fill p-4 rounded my-3"></i>
@@ -334,7 +342,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="service service--green border-bottom border-3 border-green rounded">
               <div class="px-3 py-5 px-sm-5">
                 <i class="services__icon icon text-green bg-green-50 bi bi-chat-left-text-fill p-4 rounded my-3"></i>
@@ -353,15 +361,15 @@
 
 
     <!-- plans start -->
-    <section class="plans my-5 py-3">
+    <section class="plans my-5 py-3" >
       <div class="container">
-        <div class="row mb-4">
+        <div class="row mb-4"  data-aos="fade-left" data-aos-delay="200">
           <h2 class="fw-bold">قیمت‌ها</h2>
           <p class="">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
         </div>
 
         <div class="row text-center g-5">
-          <div class="col-md-6 col-xl-3 d-flex justify-content-center">
+          <div class="col-md-6 col-xl-3 d-flex justify-content-center" data-aos="flip-right" data-aos-delay="200">
             <div class="plans__card card shadow w-100 hover-grow-scale">
               <div class="card-body px-4 py-5">
                 <h4 class="fw-bold fs-2 mb-3 text-green">پلن اول</h4>
@@ -378,7 +386,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 d-flex justify-content-center">
+          <div class="col-md-6 col-xl-3 d-flex justify-content-center" data-aos="flip-right" data-aos-delay="500">
             <div class="plans__card card shadow w-100 hover-grow-scale">
               <div class="card-body px-4 py-5">
                 <h4 class="fw-bold fs-2 mb-3 text-orange">پلن دوم</h4>
@@ -395,7 +403,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 d-flex justify-content-center">
+          <div class="col-md-6 col-xl-3 d-flex justify-content-center" data-aos="flip-left" data-aos-delay="500">
             <div class="plans__card card shadow w-100 hover-grow-scale">
               <div class="card-body px-4 py-5">
                 <h4 class="fw-bold fs-2 mb-3 text-pink">پلن سوم</h4>
@@ -412,7 +420,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 d-flex justify-content-center">
+          <div class="col-md-6 col-xl-3 d-flex justify-content-center" data-aos="fade-left" data-aos-delay="200">
             <div class="plans__card card shadow w-100 hover-grow-scale">
               <div class="card-body px-4 py-5">
                 <h4 class="fw-bold fs-2 mb-3 text-blue">پلن رایگان</h2>
@@ -611,10 +619,12 @@
   <!-- pureCounterJS -->
   <script src="js/purecounterjs.js"></script>
 
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
-    window.onload = () => window.scrollTo(0, window.scrollY);
     new PureCounter();
+    AOS.init();
   </script>
 </body>
 
